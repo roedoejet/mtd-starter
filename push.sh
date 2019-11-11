@@ -5,14 +5,17 @@ setup_git() {
   git config --global user.name "Travis CI"
 }
 
-move_exported_files() {
+checkout_branch() {
     git checkout -b gh-pages
+    git pull origin gh-pages
+}
+
+move_exported_files() {
     rm ${TRAVIS_BUILD_DIR}/assets/*.js
     mv ${TRAVIS_BUILD_DIR}/*.js ${TRAVIS_BUILD_DIR}/assets/
 }
 
 commit_exported_files() {
-  git checkout -b gh-pages
   git add ${TRAVIS_BUILD_DIR}/assets/*.js
   git commit -a -m "Travis build: $TRAVIS_BUILD_NUMBER"
 }
@@ -23,6 +26,7 @@ upload_files() {
 }
 
 setup_git
+checkout_branch
 move_exported_files
 commit_exported_files
 upload_files
