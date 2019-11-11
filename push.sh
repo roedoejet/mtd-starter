@@ -16,5 +16,5 @@ upload_files() {
 }
 
 setup_git
-commit_website_files
+commit_exported_files
 upload_files
