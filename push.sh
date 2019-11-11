@@ -11,8 +11,8 @@ commit_exported_files() {
 }
 
 upload_files() {
-  git remote add travis https://${GH_TOKEN}@github.com/roedoejet/mtd-starter.git > /dev/null 2>&1
-  git push --quiet --set-upstream travis master
+  git remote add travis-origin https://${GH_TOKEN}@github.com/roedoejet/mtd-starter.git > /dev/null 2>&1
+  git push travis-origin master
 }
 
 setup_git
