@@ -6,7 +6,7 @@ setup_git() {
 }
 
 commit_exported_files() {
-  git add . *.js
+  git add ${TRAVIS_BUILD_DIR}/*.js
   git commit --message "Travis build: $TRAVIS_BUILD_NUMBER"
 }
 
