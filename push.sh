@@ -13,7 +13,12 @@ checkout_branch() {
 }
 
 move_exported_files() {
-    rm ${TRAVIS_BUILD_DIR}/assets/*.js
+    if [ -d "${TRAVIS_BUILD_DIR}/assets" ] 
+    then
+        rm ${TRAVIS_BUILD_DIR}/assets/*.js
+    else
+        mkdir ${TRAVIS_BUILD_DIR}/assets
+    fi
     mv ${TRAVIS_BUILD_DIR}/*.js ${TRAVIS_BUILD_DIR}/assets/
 }
 
