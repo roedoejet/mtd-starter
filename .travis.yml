@@ -22,7 +22,7 @@ install:
 
 # export js
 script: 
-  - cd $TRAVIS_BUILD_DIR/config && mtd export . js ../data
+  - cd $TRAVIS_BUILD_DIR/config && mtd export . js ../
 
 # commands to run after the tests successfully complete
 after_success:
