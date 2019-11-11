@@ -16,10 +16,11 @@ move_exported_files() {
     if [ -d "${TRAVIS_BUILD_DIR}/assets" ] 
     then
         rm ${TRAVIS_BUILD_DIR}/assets/*.js
+        mv ${TRAVIS_BUILD_DIR}/*.js ${TRAVIS_BUILD_DIR}/assets/
     else
         mkdir ${TRAVIS_BUILD_DIR}/assets
+        mv ${TRAVIS_BUILD_DIR}/*.js ${TRAVIS_BUILD_DIR}/assets/
     fi
-    mv ${TRAVIS_BUILD_DIR}/*.js ${TRAVIS_BUILD_DIR}/assets/
 }
 
 upload_files() {
