@@ -22,4 +22,5 @@ script:
 
 # commands to run after the tests successfully complete
 after_success:
+  - chmod +x $TRAVIS_BUILD_DIR/push.sh
   - $TRAVIS_BUILD_DIR/push.sh
