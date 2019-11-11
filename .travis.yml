@@ -14,11 +14,11 @@ before_install:
 # virtualenv
 install:
   # Install Python dependencies
-  - pip3 install -r $TRAVIS_BUILD_DIR/roedoejet/mtd-starter/requirements.txt
+  - pip3 install -r $TRAVIS_BUILD_DIR/requirements.txt
 
 # export js
 script: 
-  - cd $TRAVIS_BUILD_DIR/roedoejet/mtd-starter/config && mtd export . js ../data
+  - cd $TRAVIS_BUILD_DIR/config && mtd export . js ../data
 
 # commands to run after the tests successfully complete
 after_success:
