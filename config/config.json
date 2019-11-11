@@ -1,0 +1,14 @@
+{
+    "config": {
+        "L1": "Danish",
+        "L2": "English",
+        "optional_field_title": "Optional Info",
+        "alphabet": "../alphabet.csv"
+    },
+    "data": [
+        {
+            "manifest": "./manifest.json",
+            "resource": "../data/data.csv"
+        }
+    ]
+}
