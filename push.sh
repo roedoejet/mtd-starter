@@ -14,7 +14,7 @@ checkout_branch() {
 
 upload_files() {
   git remote add travis-origin https://${GH_TOKEN}@github.com/roedoejet/mtd-starter.git > /dev/null 2>&1
-  git push travis-origin gh-pages
+  git push --force travis-origin gh-pages
 }
 
 setup_git
