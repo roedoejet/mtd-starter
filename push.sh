@@ -12,19 +12,6 @@ checkout_branch() {
     git pull origin gh-pages
 }
 
-move_exported_files() {
-    if [ -d "${TRAVIS_BUILD_DIR}/assets" ] 
-    then
-        rm ${TRAVIS_BUILD_DIR}/assets/*.js
-        mv ${TRAVIS_BUILD_DIR}/*.js ${TRAVIS_BUILD_DIR}/assets/
-        git commit -a -m "Travis build: $TRAVIS_BUILD_NUMBER"
-    else
-        mkdir ${TRAVIS_BUILD_DIR}/assets
-        mv ${TRAVIS_BUILD_DIR}/*.js ${TRAVIS_BUILD_DIR}/assets/
-        git commit -a -m "Travis build: $TRAVIS_BUILD_NUMBER"
-    fi
-}
-
 upload_files() {
   git remote add travis-origin https://${GH_TOKEN}@github.com/roedoejet/mtd-starter.git > /dev/null 2>&1
   git push travis-origin gh-pages
@@ -32,5 +19,4 @@ upload_files() {
 
 setup_git
 checkout_branch
-move_exported_files
 upload_files
