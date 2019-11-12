@@ -17,9 +17,11 @@ move_exported_files() {
     then
         rm ${TRAVIS_BUILD_DIR}/assets/*.js
         mv ${TRAVIS_BUILD_DIR}/*.js ${TRAVIS_BUILD_DIR}/assets/
+        git commit -a -m "Travis build: $TRAVIS_BUILD_NUMBER"
     else
         mkdir ${TRAVIS_BUILD_DIR}/assets
         mv ${TRAVIS_BUILD_DIR}/*.js ${TRAVIS_BUILD_DIR}/assets/
+        git commit -a -m "Travis build: $TRAVIS_BUILD_NUMBER"
     fi
 }
 
