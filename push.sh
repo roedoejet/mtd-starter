@@ -9,7 +9,6 @@ checkout_branch() {
     git add ${TRAVIS_BUILD_DIR}/*.js
     git checkout -b gh-pages
     git commit -a -m "Travis build: $TRAVIS_BUILD_NUMBER"
-    git pull origin gh-pages
 }
 
 upload_files() {
