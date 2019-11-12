@@ -1,7 +1,7 @@
 # Mother Tongues Dictionaries Starter (MTD)
 
 [![Build Status](https://travis-ci.org/roedoejet/mtd-starter.svg?branch=master)](https://travis-ci.org/roedoejet/mtd-starter)
-[![license](https://img.shields.io/github/license/roedoejet/mothertongues.svg)](LICENSE)
+[![license](https://img.shields.io/github/license/roedoejet/mtd-starter.svg)](LICENSE)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
 This is a starter kit for building a [Mother Tongues Dictionary](https://www.mothertongues.org).
