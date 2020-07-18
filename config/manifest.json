@@ -9,7 +9,7 @@
             "source": "word",
             "target": "compare_form",
             "functions": [
-                "../transducers/danish-approx.csv"
+                "../transducers/danish-approx.yaml"
             ]
         },
         {
