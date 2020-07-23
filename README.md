@@ -6,7 +6,7 @@
 
 This is a starter kit for building a [Mother Tongues Dictionary](https://www.mothertongues.org).
 
-Please visit the [repo](https://github.com/roedoejet/mothertongues) or [docs](https://mother-tongues-dictionaries.readthedocs.io/en/latest/) for more information.
+Please visit the [repo](https://github.com/roedoejet/mothertongues) or [docs](https://docs.mothertongues.org) for more information.
 
 ## Table of Contents
 
@@ -33,7 +33,7 @@ In order to create a Mother Tongues Dictionary you will need to adapt the config
 
 You can find out more about how to create these files against the MTD configuration schema by visiting the [docs](https://mother-tongues-dictionaries.readthedocs.io/en/latest/)
 
-Once you have those files, you can either create a dictionary programatically or using the command line interface. This repo also automatically builds with Travis.
+Once you have those files, you can either create a dictionary programatically or using the command line interface. This repo also automatically builds with GitHub Actions.
 
 ## Contributing
 
@@ -49,8 +49,7 @@ Thank you to all other contributors for support with improving MotherTongues, fi
 
 ### Contributors
 
-This project exists thanks to all the people who contribute. 
-
+This project exists thanks to all the people who contribute.
 
 ## License
 
