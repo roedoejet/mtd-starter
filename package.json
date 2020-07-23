@@ -1,0 +1,37 @@
+{
+  "name": "mtd-starter",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roedoejet/mtd-starter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/roedoejet/mtd-starter/issues"
+  },
+  "homepage": "https://github.com/roedoejet/mtd-starter#readme",
+  "dependencies": {
+    "@commitlint/config-conventional": "^8.3.4",
+    "commitlint": "^8.3.5",
+    "husky": "^4.2.3",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1"
+  }
+}
