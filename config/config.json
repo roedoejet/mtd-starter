@@ -1,14 +1,14 @@
 {
     "config": {
-        "L1": "Danish",
+        "L1": "Hul’q’umi’num’",
         "L2": "English",
-        "optional_field_title": "Optional Info",
+        "optional_field_title": "optional test",
         "alphabet": "../alphabet.csv"
     },
     "data": [
         {
             "manifest": "./manifest.json",
-            "resource": "../data/data.csv"
+            "resource": "../data/hulqdict.csv"
         }
     ]
 }

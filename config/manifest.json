@@ -4,37 +4,27 @@
     "display": "word",
     "compare": "compare_form",
     "sorting": "sort_form",
-    "transducers": [
+    "transducers":[
         {
-            "source": "word",
-            "target": "compare_form",
-            "functions": [
-                "../transducers/danish-approx.yaml"
-            ]
-        },
-        {
-            "source": "word",
-            "target": "sort_form",
-            "functions": [
-                "lambda x: x.lower()"
-            ]
-        }
-    ],
+            "source":"word",
+            "target":"compare_form",
+            "functions":[
+                "../transducers"
+          ],
     "targets": {
-        "entryID": "0",
-        "definition": "1",
-        "word": "2",
-        "audio": [
-            {
-                "speaker": "3",
-                "filename": "4"
-            }
-        ],
-        "theme": "5",
-        "optional": [
-            {
-                "Pronunciation": "6"
-            }
-        ]
+        "word": "B",
+        "definition": "H",
+        "entryID": "A",
+        "optional": {
+            "parse": "C",
+            "root": "D",
+            "lexical category": "E",
+            "level": "G"
+        },
+        "theme": "F",
+        "example_sentence": {
+            "Example sentence 1":"I",
+            "Example translation 1":"J"
+        }
     }
 }

@@ -1,4 +1,4 @@
-mapping: danish-approx.csv
+mapping: hulq-approx.csv
 norm_form: NFC
 escape_special: true
 case_sensitive: false
