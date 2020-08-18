@@ -3,28 +3,38 @@
     "name": "words",
     "display": "word",
     "compare": "compare_form",
-    "sorting": "sort_form",
-    "transducers":[
+    "sorting": "word",
+    "transducers": [
         {
-            "source":"word",
-            "target":"compare_form",
-            "functions":[
-                "../transducers"
-          ],
-    "targets": {
-        "word": "B",
-        "definition": "H",
-        "entryID": "A",
-        "optional": {
-            "parse": "C",
-            "root": "D",
-            "lexical category": "E",
-            "level": "G"
-        },
-        "theme": "F",
-        "example_sentence": {
-            "Example sentence 1":"I",
-            "Example translation 1":"J"
+            "source": "word",
+            "target": "compare_form",
+            "functions": [
+                "../transducers/hulq-approx.yaml"
+            ]
         }
+    ],
+    "targets": {
+        "word": "1",
+        "definition": "7",
+        "entryID": "0",
+        "optional": [
+            {
+                "parse": "2"
+            },
+            {
+                "root": "3"
+            },
+            {
+                "lexical category": "4"
+            },
+            {
+                "level": "6"
+            }
+        ]
+    },
+    "theme": "5",
+    "example_sentence": {
+        "Example sentence 1": "8",
+        "Example translation 1": "9"
     }
 }
