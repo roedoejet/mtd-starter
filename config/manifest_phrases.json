@@ -8,7 +8,7 @@
     {
       "source": "word",
       "target": "compare_form",
-      "functions": ["../../transducers/smalgyax/approx.yaml"]
+      "functions": ["../transducers/approx.yaml"]
     },
     {
       "source": "word",
