@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <script data-ionic="inject">
+      (function(w) {
+        var i = (w.Ionic = w.Ionic || {});
+        i.version = "3.9.2";
+        i.angular = "5.0.3";
+        i.staticDir = "build/";
+      })(window);
+    </script>
+    <meta charset="UTF-8" />
+    <title>MTD Starter App</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
 
-<head>
-  <script data-ionic="inject">
-    (function(w){var i=w.Ionic=w.Ionic||{};i.version='3.9.2';i.angular='5.0.3';i.staticDir='build/';})(window);
-  </script>
-  <meta charset="UTF-8">
-  <title>MTD Starter App</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="format-detection" content="telephone=no">
-  <meta name="msapplication-tap-highlight" content="no">
+    <!-- <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico"> -->
+    <meta name="theme-color" content="#4e8ef7" />
 
-  <!-- <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico"> -->
-  <meta name="theme-color" content="#4e8ef7">
+    <!-- cordova.js required for cordova apps -->
+    <!-- <script src="cordova.js"></script> -->
 
-  <!-- cordova.js required for cordova apps -->
-  <!-- <script src="cordova.js"></script> -->
+    <script src="https://roedoejet.github.io/mtd-starter/config.js"></script>
+    <script src="https://roedoejet.github.io/mtd-starter/dict_cached.js"></script>
 
-  <script src="https://roedoejet.github.io/mtd-starter/config-danish.js"></script>
-  <script src="https://roedoejet.github.io/mtd-starter/dict_cached-danish.js"></script>
+    <!-- MTD-UI JS dependencies -->
+    <script src="https://roedoejet.github.io/mothertongues-UI/src/assets/js/mtd-ui.min.js"></script>
 
-  <!-- MTD-UI JS dependencies -->
-  <script src="https://roedoejet.github.io/mothertongues-UI/src/assets/js/mtd-ui.min.js"></script>
-
-  <!-- un-comment this code to enable service worker
+    <!-- un-comment this code to enable service worker
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('service-worker.js')
@@ -32,24 +39,23 @@
     }
   </script>-->
 
-  <link href="https://roedoejet.github.io/mothertongues-UI/www/build/main.css" rel="stylesheet">
+    <link
+      href="https://roedoejet.github.io/mothertongues-UI/www/build/main.css"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
+  <body>
+    <!-- Ionic's root component and where the app will load -->
+    <ion-app [entries]="allEntries"></ion-app>
 
-<body>
+    <!-- The polyfills js is generated during the build process -->
+    <script src="https://roedoejet.github.io/mothertongues-UI/www/build/polyfills.js"></script>
 
-  <!-- Ionic's root component and where the app will load -->
-  <ion-app [entries]="allEntries"></ion-app>
+    <!-- all code from node_modules directory is here -->
+    <script src="https://roedoejet.github.io/mothertongues-UI/www/build/vendor.js"></script>
 
-  <!-- The polyfills js is generated during the build process -->
-  <script src="https://roedoejet.github.io/mothertongues-UI/www/build/polyfills.js"></script>
-
-  <!-- all code from node_modules directory is here -->
-  <script src="https://roedoejet.github.io/mothertongues-UI/www/build/vendor.js"></script>
-
-  <!-- The bundle js is generated during the build process -->
-  <script src="https://roedoejet.github.io/mothertongues-UI/www/build/main.js"></script>
-
-</body>
-
+    <!-- The bundle js is generated during the build process -->
+    <script src="https://roedoejet.github.io/mothertongues-UI/www/build/main.js"></script>
+  </body>
 </html>
