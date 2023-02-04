@@ -1,1 +1,2 @@
 mothertongues
+networkx==2.8.8
